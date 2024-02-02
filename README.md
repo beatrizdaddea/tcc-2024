@@ -8,9 +8,6 @@ Mapeamento de áreas de deslizamento usando processamento de imagens e Geoproces
 
 ## Download e Instação (em progresso)
 
-## ScreenShots
-
-
 ## Aprendizados
 
 O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
