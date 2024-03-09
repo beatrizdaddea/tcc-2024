@@ -6,7 +6,8 @@ Mapeamento de áreas de deslizamento usando processamento de imagens e Geoproces
 
 ## Requisitos (em progresso)
 
-## Download e Instação (em progresso)
+## Download e Instalação (em progresso)
+
 
 ## Aprendizados
 
