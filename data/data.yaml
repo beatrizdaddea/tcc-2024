@@ -1,0 +1,13 @@
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 1
+names: ['Landslide']
+
+roboflow:
+  workspace: landslide-acdnd
+  project: landslide2-x0xaa
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/landslide-acdnd/landslide2-x0xaa/dataset/1
