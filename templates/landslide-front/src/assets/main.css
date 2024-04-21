@@ -1,0 +1,26 @@
+@import './base.css';
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
