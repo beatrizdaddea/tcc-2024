@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block stylesheets %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    {% endblock stylesheets %}
+    <title>HomePage</title>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="#informacoes">Informações</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+        <a href="#duvidas">Dúvidas</a>
+    </div>
+    <div class="content">
+        <h1>Landslide Detector</h1>
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" class="file-input" name="file" id="file-upload" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
+    body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    h1 {
+    text-align: center;
+    margin-top: 50px;
+    }
+
+    form {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+
+    button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+    background-color: #3d8f41;
+    }
+
+    p {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    }
+
+    .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+    border-radius: 0 10px 10px 0;
+    }
+
+    .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+    background-color: #555;
+    }
+
+    .content {
+    margin-left: 200px;
+    padding: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-radius: 0;
+        border-right: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    }
+
+</style> -->
