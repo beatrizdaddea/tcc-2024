@@ -9,13 +9,13 @@ Siga os passos abaixo para instalar e configurar o projeto em seu ambiente local
 1. Clone o repositório:
 
   ```shell
-  git clone https://github.com/seu-usuario/nome-do-repositorio.git
+  git clone https://github.com/beatrizdaddea/tcc-2024.git
   ```
 
 2. Acesse o diretório do projeto:
 
   ```shell
-  cd nome-do-repositorio
+  cd tcc-2024
   ```
 
 3. Intalação:
