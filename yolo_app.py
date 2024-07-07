@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 import numpy as np
 import base64
 import cv2
@@ -44,6 +44,7 @@ def home():
             file.stream.seek(0)
             original_img_base64 = base64.b64encode(file.stream.read()).decode('utf-8')
 
+            # Redireciona para a página de resultados com os dados das imagens
             return render_template('result.html', original_img_data=original_img_base64, detection_img_data=detection_img_base64)
 
     return render_template('index.html')
@@ -51,5 +52,3 @@ def home():
 if __name__ == '__main__':
     os.environ.setdefault('FLASK_ENV', 'development')
     app.run(debug=False, port=5000, host='0.0.0.0')
-
-
