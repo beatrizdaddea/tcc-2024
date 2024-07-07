@@ -1,0 +1,4 @@
+## LandSlide WebApp
+
+### Commands
+flask --app yolo_app.py run --host=0.0.0.0
