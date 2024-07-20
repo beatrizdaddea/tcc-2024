@@ -28,7 +28,7 @@ Siga os passos abaixo para instalar e configurar o projeto em seu ambiente local
     - Instalar Ultralytics/Yolo 
 
     ```shell
-    pip install pip install ultralytics
+     pip install ultralytics
     ```
 
     - Instalar CV2 
