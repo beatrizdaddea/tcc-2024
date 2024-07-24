@@ -1,0 +1,43 @@
+.container-info {
+    margin-left: 250px;
+    margin-bottom: 250px;
+}
+
+.container-info p {
+    text-align: justify;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.title-info {
+    text-align: center;
+    background-color: #333;
+    color: #f8f8f8;
+    width: 85%;
+    margin: 2rem auto;
+    padding: .5rem;
+}
+
+@media (max-width: 768px) {
+    .container-info p {
+        width: 90%;
+    }
+
+    .title-info {
+        width: 90%;
+        margin: 1rem auto;
+        padding: .25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-info p {
+        width: 95%;
+    }
+
+    .title-info {
+        width: 95%;
+        margin: 1rem auto;
+        padding: .25rem;
+    }
+}

@@ -10,61 +10,25 @@ h1 {
   margin-top: 50px;
 }
 
-form {
-  text-align: center;
-  margin-top: 20px;
-}
-
-input[type="file"] {
+.btn-submit,
+.file-input-label  {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-button[type="submit"] {
-  display: block;
-  margin: 0 auto;
-}
-
-
-button[type="submit"] {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; 
   transition: background-color 0.3s;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  align-content: center;
 }
 
-button[type="submit"]:hover {
+.btn-submit:hover,
+.file-input-label:hover {
   background-color: #3d8f41;
-}
-
-.sidebar {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #333;
-  padding-top: 20px;
-  border-right: 1px solid #ddd;
-  border-radius: 0 10px 10px 0;
-}
-
-.sidebar a {
-  padding: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  background-color: #555;
 }
 
 .content {
@@ -72,6 +36,48 @@ button[type="submit"]:hover {
   padding: 20px;
 }
 
+.file-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.container-file-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label i {
+  margin-right: 8px;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.container-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    margin-left: 10px;
+  }
+
+}
 @media only screen and (max-width: 600px) {
   .sidebar {
     width: 100%;
