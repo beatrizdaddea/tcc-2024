@@ -38,13 +38,7 @@
           <button type="submit" class="btn-submit"><i class="fa fa-cloud-arrow-up fa-lg"></i></button>
         </div>
       </form>
+      <small class="file-format-info">Apenas arquivos .png, .jpg, .jpeg, .gif são aceitos.</small>
     </div>
-
-    <script>
-      document.getElementById('file-upload').addEventListener('change', function () {
-        var fileName = this.files[0].name
-        document.getElementById('file-name').textContent = fileName
-      })
-    </script>
   </body>
 </html>
