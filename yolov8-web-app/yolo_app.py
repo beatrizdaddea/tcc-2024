@@ -72,7 +72,7 @@ def sobre_nos():
 
 @app.route('/duvida')
 def duvida():
-    return render_template('duvida.html')
+    return render_template('questions.html')
 
 if __name__ == '__main__':
     os.environ.setdefault('FLASK_ENV', 'development')
