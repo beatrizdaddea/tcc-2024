@@ -21,18 +21,28 @@ h1 {
 
 .container-info {
     margin-left: 250px;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    padding: 0 20px;
+    width: 100%;
 }
 
 .container-info p {
     text-align: justify;
-    width: 80%;
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
+    width: 100%;
 }
 
-.container-info img {
-    max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+.container-info img,
+.tutorial-step img,
+.result-image {
+    width: 100%;
+    max-width: 600px;
+    /* Ajusta o tamanho máximo no desktop */
     height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .tutorial-step h2 {
@@ -44,37 +54,67 @@ h1 {
     margin-bottom: 10px;
 }
 
-.tutorial-step img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.image-container {
-    width: 100%;
-    max-width: 320px;
-    overflow: hidden; 
-    margin: 0 auto; 
-}
-
-.result-image {
-    width: 50%;
-    height: 50%;
-}
-
 /* Estilos responsivos */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+    .container-info {
+        margin-left: 0;
+        padding: 0 10px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
     body {
         padding: 10px;
     }
 
+    .container-info {
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
     .tutorial-step h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .tutorial-step p {
-        font-size: 0.9em;
+        font-size: 1em;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .container-info img,
+    .tutorial-step img,
+    .result-image {
+        max-width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        body {
+            padding: 5px;
+        }
+
+        .container-info {
+            margin-left: 0;
+            margin-bottom: 20px;
+            padding: 0 5px;
+            max-width: 100%;
+        }
+
+        .tutorial-step h2 {
+            font-size: 1.1em;
+        }
+
+        .tutorial-step p {
+            font-size: 0.9em;
+        }
+
+        .container-info img,
+        .tutorial-step img,
+        .result-image {
+            max-width: 100%;
+        }
     }
 }
